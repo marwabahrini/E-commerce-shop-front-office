@@ -1,0 +1,24 @@
+<section class="box">
+    <div class="box-heading">Featured</div>
+    <div class="box-content">
+      <div class="box-product">
+        <div>
+          <ul class="slides">
+            <li>
+              <div class="slide-inner" *ngFor="let produit of produits" style="display: inline-block;margin-left: 3rem;">
+                <div class="image"><a href="product.html"><img src="assets/image/product/lotto-sports-shoes-white-210x210.jpg" /></a></div>
+                <div class="name"><a href="http://localhost/polishop/index.php?route=product/product&amp;product_id=43"> {{produit.label}} </a></div>
+                <div class="price"> {{produit.prix}} </div>
+                <div class="cart">
+                  <input type="button" value="Add to Cart" class="button" />
+             
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
